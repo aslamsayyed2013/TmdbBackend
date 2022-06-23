@@ -1,0 +1,38 @@
+micronaut:
+  application:
+    name: tmdb
+  server:
+    port: 8080
+    cors:
+      enabled: true
+      configurations:
+        all:
+          allowedOrigins:
+            - '${WEB_HOST:`http://localhost:4200`}'
+          allowedMethods:
+            - 'GET'
+            - 'POST'
+            - 'PUT'
+            - 'PATCH'
+            - 'DELETE'
+            - 'OPTIONS'
+          allowedHeaders:
+            - 'Authorization'
+            - 'connection'
+            - 'content-type'
+            - 'content-length'
+            - 'date'
+            - 'keep-alive'
+            - 'UserId'
+            - 'x-cats-request-checksum'
+            - 'x-local-cache'
+      single-header: true
+
+
+tmdb:
+  api-key: fd6bbf5b30d16dbe410178c8f6c2b0a8
+  url: "https://api.themoviedb.org/3/"
+netty:
+  default:
+    allocator:
+      max-order: 3

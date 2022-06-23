@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TmdbKataTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TmdbKataTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/co.incubyte.html">co.incubyte</a> &gt; TmdbKataTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">17.131s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="check_for_artist_by_id()"></a>
+<h3 class="failures">check_for_artist_by_id()</h3>
+<span class="code">
+<pre>io.micronaut.http.client.exceptions.ReadTimeoutException: Read Timeout
+	at app//io.micronaut.http.client.exceptions.ReadTimeoutException.&lt;clinit&gt;(ReadTimeoutException.java:26)
+	at app//io.micronaut.http.client.netty.DefaultHttpClient.lambda$exchangeImpl$41(DefaultHttpClient.java:1285)
+	at app//reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+	at app//reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+	at app//reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+	at app//reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+	at app//reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+	at app//reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at app//reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+	at app//reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+	at app//reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at app//reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base@11.0.14/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base@11.0.14/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base@11.0.14/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base@11.0.14/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base@11.0.14/java.lang.Thread.run(Thread.java:829)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">check_for_artist_by_id()</td>
+<td class="failures">17.131s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>18:31:13,554 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+18:31:13,555 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Users/DELL/OneDrive%20-%20Incubyte/Desktop/KATA/Tmdb/build/resources/test/logback.xml]
+18:31:13,555 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+18:31:13,555 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/C:/Users/DELL/OneDrive%20-%20Incubyte/Desktop/KATA/Tmdb/build/resources/test/logback.xml]
+18:31:13,555 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/C:/Users/DELL/OneDrive%20-%20Incubyte/Desktop/KATA/Tmdb/build/resources/main/logback.xml]
+18:31:13,609 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+18:31:13,609 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+18:31:13,615 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+18:31:13,623 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+18:31:13,649 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+18:31:13,649 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+18:31:13,649 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [io.micronaut.http.client] to TRACE
+18:31:13,649 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+18:31:13,650 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@f6c03cb - Registering current configuration as safe fallback point
+
+?[36m18:31:14.105?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
+2022-06-20 18:31:15.629 Verbose logging enabled
+?[36m18:31:15.982?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.eclipse.jetty.util.log?[0;39m - Logging initialized @3513ms to org.eclipse.jetty.util.log.Slf4jLog
+?[36m18:31:16.103?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.eclipse.jetty.server.Server?[0;39m - jetty-9.4.46.v20220331; built: 2022-03-31T16:38:08.030Z; git: bc17a0369a11ecf40bb92c839b9ef0a8ac50ea18; jvm 11.0.14+9-LTS
+?[36m18:31:16.120?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.e.j.server.handler.ContextHandler?[0;39m - Started o.e.j.s.ServletContextHandler@592ca48c{/__admin,null,AVAILABLE}
+?[36m18:31:16.129?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.e.j.s.handler.ContextHandler.ROOT?[0;39m - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+?[36m18:31:16.130?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.e.j.server.handler.ContextHandler?[0;39m - Started o.e.j.s.ServletContextHandler@6f6cc7da{/,null,AVAILABLE}
+?[36m18:31:16.141?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.e.jetty.server.AbstractConnector?[0;39m - Started NetworkTrafficServerConnector@309dcdf3{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:3030}
+?[36m18:31:16.141?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.eclipse.jetty.server.Server?[0;39m - Started @3672ms
+?[36m18:31:18.118?[0;39m ?[1;30m[default-nioEventLoopGroup-1-2]?[0;39m ?[39mDEBUG?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - Sending HTTP GET to http://localhost:54787/tmdb/500
+?[36m18:31:18.120?[0;39m ?[1;30m[default-nioEventLoopGroup-1-2]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - Accept: application/json
+?[36m18:31:18.120?[0;39m ?[1;30m[default-nioEventLoopGroup-1-2]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - host: localhost:54787
+?[36m18:31:18.120?[0;39m ?[1;30m[default-nioEventLoopGroup-1-2]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - connection: close
+?[36m18:31:24.877?[0;39m ?[1;30m[default-nioEventLoopGroup-1-4]?[0;39m ?[39mDEBUG?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - Sending HTTP GET to http://localhost:3030/person/500?api_key=fd6bbf5b30d16dbe410178c8f6c2b0a8
+?[36m18:31:24.879?[0;39m ?[1;30m[default-nioEventLoopGroup-1-4]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - Accept: application/json
+?[36m18:31:24.879?[0;39m ?[1;30m[default-nioEventLoopGroup-1-4]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - host: localhost:3030
+?[36m18:31:24.879?[0;39m ?[1;30m[default-nioEventLoopGroup-1-4]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - connection: close
+2022-06-20 18:31:24.983 Request received:
+127.0.0.1 - GET /person/500?api_key=fd6bbf5b30d16dbe410178c8f6c2b0a8
+
+Accept: [application/json]
+Host: [localhost:3030]
+Connection: [close]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+?[36m18:31:25.007?[0;39m ?[1;30m[qtp1146222092-35]?[0;39m ?[34mINFO ?[0;39m ?[35mo.e.j.s.h.ContextHandler.__admin?[0;39m - RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+2022-06-20 18:31:25.008 Admin request received:
+127.0.0.1 - GET /not-matched?api_key=fd6bbf5b30d16dbe410178c8f6c2b0a8
+
+Accept: [application/json]
+Host: [localhost:3030]
+Connection: [close]
+
+
+?[36m18:31:25.039?[0;39m ?[1;30m[default-nioEventLoopGroup-1-4]?[0;39m ?[39mDEBUG?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - Received response 404 from http://localhost:3030/person/500?api_key=fd6bbf5b30d16dbe410178c8f6c2b0a8
+?[36m18:31:25.040?[0;39m ?[1;30m[default-nioEventLoopGroup-1-4]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - HTTP Client Streaming Response Received (404 Not Found) for Request: GET http://localhost:3030/person/500?api_key=fd6bbf5b30d16dbe410178c8f6c2b0a8
+?[36m18:31:25.041?[0;39m ?[1;30m[default-nioEventLoopGroup-1-4]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - Connection: close
+?[36m18:31:25.041?[0;39m ?[1;30m[default-nioEventLoopGroup-1-4]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - Content-Type: text/plain
+?[36m18:31:25.041?[0;39m ?[1;30m[default-nioEventLoopGroup-1-4]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - content-length: 1189
+?[36m18:31:32.493?[0;39m ?[1;30m[default-nioEventLoopGroup-1-2]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - HTTP Client exception (ReadTimeoutException) occurred for request : GET http://localhost:54787/tmdb/500
+?[36m18:31:32.494?[0;39m ?[1;30m[Test worker]?[0;39m ?[1;31mERROR?[0;39m ?[35mi.m.r.intercept.RecoveryInterceptor?[0;39m - Type [co.incubyte.TmdbTestOnlyClient$Intercepted] executed with error: Read Timeout
+io.micronaut.http.client.exceptions.ReadTimeoutException: Read Timeout
+	at io.micronaut.http.client.exceptions.ReadTimeoutException.&lt;clinit&gt;(ReadTimeoutException.java:26)
+	at io.micronaut.http.client.netty.DefaultHttpClient.lambda$exchangeImpl$41(DefaultHttpClient.java:1285)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+	at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+?[36m18:31:32.496?[0;39m ?[1;30m[default-nioEventLoopGroup-1-5]?[0;39m ?[39mDEBUG?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - Sending HTTP GET to http://localhost:3030/person/500?api_key=fd6bbf5b30d16dbe410178c8f6c2b0a8
+?[36m18:31:32.496?[0;39m ?[1;30m[default-nioEventLoopGroup-1-5]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - Accept: application/json
+?[36m18:31:32.496?[0;39m ?[1;30m[default-nioEventLoopGroup-1-5]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - host: localhost:3030
+?[36m18:31:32.496?[0;39m ?[1;30m[default-nioEventLoopGroup-1-5]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - connection: close
+2022-06-20 18:31:32.499 Request received:
+127.0.0.1 - GET /person/500?api_key=fd6bbf5b30d16dbe410178c8f6c2b0a8
+
+Accept: [application/json]
+Host: [localhost:3030]
+Connection: [close]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-06-20 18:31:32.501 Admin request received:
+127.0.0.1 - GET /not-matched?api_key=fd6bbf5b30d16dbe410178c8f6c2b0a8
+
+Accept: [application/json]
+Host: [localhost:3030]
+Connection: [close]
+
+
+?[36m18:31:32.506?[0;39m ?[1;30m[default-nioEventLoopGroup-1-5]?[0;39m ?[39mDEBUG?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - Received response 404 from http://localhost:3030/person/500?api_key=fd6bbf5b30d16dbe410178c8f6c2b0a8
+?[36m18:31:32.506?[0;39m ?[1;30m[default-nioEventLoopGroup-1-5]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - HTTP Client Streaming Response Received (404 Not Found) for Request: GET http://localhost:3030/person/500?api_key=fd6bbf5b30d16dbe410178c8f6c2b0a8
+?[36m18:31:32.506?[0;39m ?[1;30m[default-nioEventLoopGroup-1-5]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - Connection: close
+?[36m18:31:32.506?[0;39m ?[1;30m[default-nioEventLoopGroup-1-5]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - Content-Type: text/plain
+?[36m18:31:32.506?[0;39m ?[1;30m[default-nioEventLoopGroup-1-5]?[0;39m ?[39mTRACE?[0;39m ?[35mi.m.h.client.netty.DefaultHttpClient?[0;39m - content-length: 1189
+?[36m18:31:32.513?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.e.jetty.server.AbstractConnector?[0;39m - Stopped NetworkTrafficServerConnector@309dcdf3{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:3030}
+?[36m18:31:32.514?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.e.j.server.handler.ContextHandler?[0;39m - Stopped o.e.j.s.ServletContextHandler@6f6cc7da{/,null,STOPPED}
+?[36m18:31:32.514?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.e.j.server.handler.ContextHandler?[0;39m - Stopped o.e.j.s.ServletContextHandler@592ca48c{/__admin,null,STOPPED}
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>2022-06-20 18:31:25.025 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+[regex] /person/500/combined_credits                       | /person/500?api_key=fd6bbf5b30d16dbe410178c8f6c2b0a8&lt;&lt;&lt;&lt;&lt; URL does not match
+                                                           |
+Query: api_key = fd6bbf5b30d16dbe410178c8f6c2b0a8          | api_key: fd6bbf5b30d16dbe410178c8f6c2b0a8
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-06-20 18:31:32.503 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+[regex] /person/500/combined_credits                       | /person/500?api_key=fd6bbf5b30d16dbe410178c8f6c2b0a8&lt;&lt;&lt;&lt;&lt; URL does not match
+                                                           |
+Query: api_key = fd6bbf5b30d16dbe410178c8f6c2b0a8          | api_key: fd6bbf5b30d16dbe410178c8f6c2b0a8
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.2</a> at 20-Jun-2022, 6:31:32 PM</p>
+</div>
+</div>
+</body>
+</html>

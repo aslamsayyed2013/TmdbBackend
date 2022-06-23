@@ -1,0 +1,1 @@
+[engine:junit-jupiter]/[class:co.incubyte.TmdbKataTest]/[method:check_for_artist_by_id()]
